@@ -1,0 +1,129 @@
+[gd_scene load_steps=4 format=3 uid="uid://ds46cyqmu2c3u"]
+
+[ext_resource type="Script" path="res://bubble_sort.gd" id="1_uopl3"]
+[ext_resource type="Script" path="res://RandNums.gd" id="2_fwg07"]
+[ext_resource type="PackedScene" uid="uid://burjw2f4r8dpw" path="res://rand_num.tscn" id="2_llj0f"]
+
+[node name="Bubble Sort" type="Node2D"]
+position = Vector2(128, 192)
+script = ExtResource("1_uopl3")
+
+[node name="Bubble Sort title" type="Label" parent="."]
+offset_left = 320.0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 64.0
+text = "BUBBLE SORT"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Description" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 704.0
+offset_bottom = 117.0
+text = "Each number is compared to its neighbor, swapping places if larger. The process repeats until no swaps are possible."
+horizontal_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNums" type="Node2D" parent="."]
+script = ExtResource("2_fwg07")
+
+[node name="RandNum0" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 160.0
+offset_bottom = 160.0
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum1" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 192.0
+offset_top = 128.0
+offset_right = 224.0
+offset_bottom = 160.0
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum2" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 256.0
+offset_top = 128.0
+offset_right = 288.0
+offset_bottom = 160.0
+text = "2"
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum3" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 320.0
+offset_top = 128.0
+offset_right = 352.0
+offset_bottom = 160.0
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum4" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 416.0
+offset_bottom = 160.0
+text = "4"
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum5" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 448.0
+offset_top = 128.0
+offset_right = 480.0
+offset_bottom = 160.0
+text = "5"
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum6" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 512.0
+offset_top = 128.0
+offset_right = 544.0
+offset_bottom = 160.0
+text = "6"
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum7" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 576.0
+offset_top = 128.0
+offset_right = 608.0
+offset_bottom = 160.0
+text = "7"
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum8" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 640.0
+offset_top = 128.0
+offset_right = 672.0
+offset_bottom = 160.0
+text = "8"
+metadata/_edit_use_anchors_ = true
+
+[node name="RandNum9" parent="RandNums" instance=ExtResource("2_llj0f")]
+offset_left = 704.0
+offset_top = 128.0
+offset_right = 736.0
+offset_bottom = 160.0
+text = "9"
+metadata/_edit_use_anchors_ = true
+
+[node name="Instructions" type="RichTextLabel" parent="."]
+offset_left = 64.0
+offset_top = 192.0
+offset_right = 704.0
+offset_bottom = 289.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 640.0
+offset_bottom = 267.0
+text = "Compare the highlighted number with the number to its right. If the highlighted number is larger, press -> to swap the numbers. If not, press space to skip."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
